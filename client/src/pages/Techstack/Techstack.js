@@ -169,7 +169,7 @@ const Techstack = () => {
   return (
     <>
       <div className="container techstack" id="techstack">
-        <RubberBand>
+        <>
           <h2 className="col-12 mt-3 mb-1 text-center text-uppercase">
             Technologies Stack
           </h2>
@@ -180,15 +180,15 @@ const Techstack = () => {
             Backend, frontend, databases, cloud, DevOps, AI, and development
             tools used in production and personal projects.
           </p>
-        </RubberBand>
+        </>
 
         <div className="row">
           {technologies.map((tech, index) => {
             const TechIcon = tech.icon;
 
             return (
-              <Fade left key={`${tech.name}-${index}`}>
-                <div className="col-md-3 col-sm-6 col-12">
+              <>
+                <div className="col-md-3 col-sm-6 col-12" key={`${tech.name}-${index}`}>
                   <div className="card m-2 tech-card">
                     <div className="card-content">
                       <div className="card-body">
@@ -205,7 +205,7 @@ const Techstack = () => {
                     </div>
                   </div>
                 </div>
-              </Fade>
+              </>
             );
           })}
         </div>

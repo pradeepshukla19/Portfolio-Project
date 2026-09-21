@@ -1,6 +1,5 @@
 import React from "react";
 import "./Projects.css";
-import Spin from "react-reveal/Spin";
 
 const Projects = () => {
   return (
@@ -20,7 +19,7 @@ const Projects = () => {
 
         {/* Project Cards */}
         <div className="row" id="ads">
-          <Spin>
+          <>
 
             {/* ================= URL SHORTENER ================= */}
 
@@ -120,7 +119,7 @@ const Projects = () => {
               </div>
             </div>
 
-          </Spin>
+          </>
         </div>
       </div>
     </>

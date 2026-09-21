@@ -4,7 +4,6 @@ import Typewriter from "typewriter-effect";
 import Resume from "../../assets/docs/resume.pdf";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import "./home.css";
-import Fade from "react-reveal/Fade";
 
 const Home = () => {
   const [theme, setTheme] = useTheme();
@@ -31,7 +30,7 @@ const Home = () => {
 
         <div className="container home-content">
 
-          <Fade right>
+          <>
             <h2>Hi 👋 I'm</h2>
 
             <h1>
@@ -56,9 +55,9 @@ const Home = () => {
               integrations, and cloud-based applications using Node.js,
               TypeScript, Express.js, MongoDB, MySQL, and AWS.
             </p>
-          </Fade>
+          </>
 
-          <Fade bottom>
+          <>
             <div className="home-buttons">
 
               {/* Hire Me */}
@@ -79,7 +78,7 @@ const Home = () => {
               </a>
 
             </div>
-          </Fade>
+          </>
 
         </div>
       </div>

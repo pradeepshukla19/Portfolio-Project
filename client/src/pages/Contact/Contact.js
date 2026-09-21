@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { toast } from "react-toastify";
 import axios from "axios";
 import "./Contact.css";
-import Rotate from "react-reveal/Rotate";
-import LightSpeed from "react-reveal/LightSpeed";
 import { BsGithub, BsLinkedin, BsEnvelopeFill } from "react-icons/bs";
 
 const Contact = () => {
@@ -51,20 +49,20 @@ const Contact = () => {
             <div className="col-md-6 col-lg-6 col-xl-6 col-sm-12">
               <div className="card1">
                 <div className="row border-line">
-                  <LightSpeed>
+                  <>
                     <img
                       src="https://img.freepik.com/free-photo/hot-line-contact-us-call-center-search-interface_53876-124009.jpg?w=2000"
                       alt="Contact Pradeep Shukla"
                       className="image"
                     />
-                  </LightSpeed>
+                  </>
                 </div>
               </div>
             </div>
 
             {/* Contact Form */}
             <div className="col-lg-6 col-md-6 col-sm-12">
-              <Rotate>
+              <>
                 <div className="card2 d-flex card border-0 px-4 py-5">
                   <div className="row">
 
@@ -161,7 +159,7 @@ const Contact = () => {
 
                   </div>
                 </div>
-              </Rotate>
+              </>
             </div>
 
           </div>

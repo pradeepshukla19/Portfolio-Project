@@ -9,7 +9,6 @@ import WorkExp from "./pages/workExp/WorkExp";
 import ScrollToTop from "react-scroll-to-top";
 import { useTheme } from "./context/ThemeContext";
 
-import Tada from "react-reveal/Tada";
 import MobileNav from "./components/MobileNav/MobileNav";
 
 import { ToastContainer } from "react-toastify";
@@ -51,11 +50,9 @@ function App() {
 
         {/* Footer */}
         <div className="footer pb-3 ms-3">
-          <Tada>
-            <h4 className="text-center">
-              © 2026 Pradeep Shukla | Backend / Node.js Software Engineer
-            </h4>
-          </Tada>
+          <h4 className="text-center">
+            © 2026 Pradeep Shukla | Backend / Node.js Software Engineer
+          </h4>
         </div>
       </div>
 
