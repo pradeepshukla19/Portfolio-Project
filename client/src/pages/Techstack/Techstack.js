@@ -1,7 +1,5 @@
 import React from "react";
 import "./Techstack.css";
-import RubberBand from "react-reveal/RubberBand";
-import Fade from "react-reveal/Fade";
 import { FaJava } from "react-icons/fa";
 
 import {
