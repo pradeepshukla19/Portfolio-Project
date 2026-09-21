@@ -1,47 +1,131 @@
 .education {
-  padding: 100px 0px;
-  margin: 50px 0px;
+  padding: 70px 30px;
+  margin: 50px 0;
   margin-left: 120px;
-  background-color: rgba(128, 128, 128, 0.101);
+  background-color: rgba(128, 128, 128, 0.08);
+}
+
+/* ================= HEADING ================= */
+
+.education h2 {
+  font-weight: bold;
+  color: #138781;
+  font-family: cursive;
 }
 
 .education hr {
   color: #138781;
   width: 400px;
-  margin: 10px auto;
+  margin: 12px auto 35px;
+  border: 0;
+  border-top: 2px solid #138781;
 }
 
-.education h2 {
-  font-weight: bold;
-  color: #138781;
-}
+/* ================= TIMELINE ================= */
 
 .education .vertical-timeline-element-title {
   color: #138781;
+  font-weight: 700;
+  margin-bottom: 8px;
 }
 
 .education .vertical-timeline-element-subtitle {
   color: #1e1e2c;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
-/* ========= DARK MODE ============ */
+.education-cgpa {
+  color: #138781;
+  font-weight: 600;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+/* ================= TIMELINE CARD ================= */
+
+.education .vertical-timeline-element-content {
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* ================= DARK MODE ================= */
 
 #dark .education {
-  background-color: rgba(255, 255, 255, 0.095);
+  background-color: rgba(255, 255, 255, 0.06);
 }
 
-/* ========================== */
+#dark .education h2 {
+  color: #4fc3bb;
+}
+
+#dark .education hr {
+  color: #4fc3bb;
+  border-top-color: #4fc3bb;
+}
+
+#dark .education .vertical-timeline-element-title {
+  color: #4fc3bb;
+}
+
+#dark .education .vertical-timeline-element-subtitle {
+  color: #ddd;
+}
+
+#dark .education .education-cgpa {
+  color: #4fc3bb;
+}
+
+#dark .education .vertical-timeline-element-content {
+  background-color: #1e1e2c !important;
+  color: #fff !important;
+  box-shadow: none;
+}
+
+#dark .education .vertical-timeline-element-content-arrow {
+  border-right-color: #1e1e2c !important;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 992px) {
+  .education {
+    margin-left: 50px;
+    padding: 60px 20px;
+  }
+
+  .education hr {
+    width: 350px;
+  }
+}
+
+/* ================= MOBILE ================= */
+
 @media (max-width: 600px) {
   .education {
-    margin: 0;
-    padding: 0;
-    margin-top: 30px;
+    margin: 30px 0 0;
+    padding: 30px 10px;
   }
+
   .education h2 {
-    padding-top: 20px;
+    padding-top: 10px;
+    font-size: 24px;
   }
+
   .education hr {
     width: 280px;
-    margin-bottom: 10px;
+    margin: 10px auto 25px;
+  }
+
+  .education .vertical-timeline-element-title {
+    font-size: 18px;
+  }
+
+  .education .vertical-timeline-element-subtitle {
+    font-size: 14px;
+  }
+
+  .education-cgpa {
+    font-size: 14px;
   }
 }

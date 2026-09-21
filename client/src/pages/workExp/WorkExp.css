@@ -1,49 +1,198 @@
 .work {
-  background-color: #1387812a;
+  background-color: rgba(19, 135, 129, 0.08);
   margin-left: 140px;
+  margin-right: 0;
+  padding: 0;
 }
 
 .work-exp {
-  padding: 60px 0px;
+  padding: 70px 30px;
 }
 
 .work-exp h2 {
   font-weight: bold;
-  color: #1e1e2c;
+  color: #138781;
+  font-family: cursive;
+  letter-spacing: 0.5px;
 }
 
 .work-exp hr {
   color: #138781;
   width: 400px;
-  margin: 10px auto;
+  margin: 12px auto 40px;
+  border: 0;
+  border-top: 2px solid #138781;
+}
+
+/* ===== TIMELINE ===== */
+
+.work-exp .vertical-timeline {
+  padding: 0;
 }
 
 .work-exp .vertical-timeline-element-title {
   color: #138781;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
 }
 
 .work-exp .vertical-timeline-element-subtitle {
-  color: #1e1e2c78;
+  color: #1e1e2c;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 12px;
 }
 
-/* ===== DARK MODE ========== */
+.work-exp .vertical-timeline-element-content {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  padding: 22px;
+}
+
+.work-exp .vertical-timeline-element-content p {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+.work-exp .vertical-timeline-element-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Timeline icon */
+
+.work-exp .vertical-timeline-element-icon {
+  box-shadow: 0 0 0 4px #138781;
+}
+
+.work-exp .vertical-timeline::before {
+  background: #1e1e2c;
+}
+
+/* ===== DARK MODE ===== */
+
 #dark .work {
-  background-color: #643a6b;
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 #dark .work-exp h2 {
-  color: white;
+  color: #4fc3bb;
 }
 
-/* =================== */
+#dark .work-exp hr {
+  color: #4fc3bb;
+  border-top-color: #4fc3bb;
+}
+
+#dark .work-exp .vertical-timeline::before {
+  background: #4fc3bb;
+}
+
+#dark .work-exp .vertical-timeline-element-content {
+  background-color: #1e1e2c !important;
+  color: #fff !important;
+  box-shadow: none;
+}
+
+#dark .work-exp .vertical-timeline-element-content-arrow {
+  border-right-color: #1e1e2c !important;
+}
+
+#dark .work-exp .vertical-timeline-element-title {
+  color: #4fc3bb;
+}
+
+#dark .work-exp .vertical-timeline-element-subtitle {
+  color: #ddd;
+}
+
+#dark .work-exp .vertical-timeline-element-content p {
+  color: #c5c5c5;
+}
+
+#dark .work-exp .vertical-timeline-element-icon {
+  box-shadow: 0 0 0 4px #4fc3bb;
+}
+
+/* ===== TABLET ===== */
+
+@media (max-width: 992px) {
+  .work {
+    margin-left: 50px;
+  }
+
+  .work-exp {
+    padding: 60px 20px;
+  }
+
+  .work-exp hr {
+    width: 350px;
+    margin-bottom: 35px;
+  }
+
+  .work-exp .vertical-timeline-element-title {
+    font-size: 19px;
+  }
+
+  .work-exp .vertical-timeline-element-subtitle {
+    font-size: 15px;
+  }
+
+  .work-exp .vertical-timeline-element-content p {
+    font-size: 14px;
+  }
+}
+
+/* ===== MOBILE ===== */
 
 @media (max-width: 600px) {
   .work {
-    margin: 0;
+    margin: 40px 0 0;
     padding: 0;
-    margin-top: 50px;
   }
-  .work hr {
+
+  .work-exp {
+    padding: 35px 10px;
+  }
+
+  .work-exp h2 {
+    font-size: 24px;
+    padding-top: 10px;
+  }
+
+  .work-exp hr {
     width: 280px;
+    margin: 10px auto 30px;
+  }
+
+  .work-exp .vertical-timeline-element-title {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .work-exp .vertical-timeline-element-subtitle {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .work-exp .vertical-timeline-element-content {
+    padding: 18px;
+  }
+
+  .work-exp .vertical-timeline-element-content p {
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: left;
+  }
+
+  .work-exp .vertical-timeline-element-icon {
+    box-shadow: 0 0 0 3px #138781;
+  }
+
+  #dark .work-exp .vertical-timeline-element-icon {
+    box-shadow: 0 0 0 3px #4fc3bb;
   }
 }

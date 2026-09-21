@@ -1,46 +1,236 @@
 .techstack {
-  padding-left: 130px;
-  margin-top: 60px;
+  padding: 70px 30px 60px 130px;
+  margin-top: 40px;
 }
-.techstack hr {
-  color: #138781;
-  width: 400px;
-  margin: 10px auto;
-}
+
+/* ===== HEADING ===== */
 
 .techstack h2 {
   font-weight: bold;
   color: #138781;
+  font-family: cursive;
+  letter-spacing: 0.5px;
 }
+
+.techstack hr {
+  color: #138781;
+  width: 400px;
+  margin: 12px auto 15px;
+  border: 0;
+  border-top: 2px solid #138781;
+}
+
+.techstack > div:first-child p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* ===== TECHNOLOGY CARD ===== */
 
 .techstack .card {
   cursor: pointer;
-}
-
-.techstack .tech-icon {
-  font-size: 2rem;
-  margin-right: 10px;
+  height: 100%;
+  min-height: 75px;
+  border: none;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.10);
+  transition: all 0.3s ease;
+  overflow: hidden;
 }
 
 .techstack .card:hover {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transform: translateY(-7px);
   background-color: #138781;
   color: white;
-
-  transition: 1s;
+  box-shadow: 0 12px 25px rgba(19, 135, 129, 0.30);
 }
 
-/* =============================== */
+/* ===== CARD BODY ===== */
+
+.techstack .card-body {
+  padding: 18px 15px;
+}
+
+.techstack .media {
+  min-height: 40px;
+}
+
+/* ===== ICON ===== */
+
+.techstack .tech-icon {
+  font-size: 2rem;
+  margin-right: 12px;
+  color: #138781;
+  transition: all 0.3s ease;
+}
+
+.techstack .card:hover .tech-icon {
+  color: #fff;
+  transform: scale(1.15) rotate(5deg);
+}
+
+/* ===== TECHNOLOGY NAME ===== */
+
+.techstack .media-body {
+  display: flex;
+  align-items: center;
+}
+
+.techstack .media-body h5 {
+  margin: 0;
+  color: #333;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.3;
+  transition: all 0.3s ease;
+}
+
+.techstack .card:hover .media-body h5 {
+  color: #fff;
+}
+
+/* ===== CARD ANIMATION ===== */
+
+.techstack .card:hover {
+  transition: transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease;
+}
+
+/* ===== DARK MODE ===== */
+
+#dark .techstack h2 {
+  color: #4fc3bb;
+}
+
+#dark .techstack hr {
+  color: #4fc3bb;
+  border-top-color: #4fc3bb;
+}
+
+#dark .techstack > div:first-child p {
+  color: #c5c5c5;
+}
+
+#dark .techstack .card {
+  background-color: #1e1e2c;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+#dark .techstack .tech-icon {
+  color: #4fc3bb;
+}
+
+#dark .techstack .media-body h5 {
+  color: #ddd;
+}
+
+#dark .techstack .card:hover {
+  background-color: #138781;
+  color: #fff;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+}
+
+#dark .techstack .card:hover .tech-icon,
+#dark .techstack .card:hover .media-body h5 {
+  color: #fff;
+}
+
+/* ===== TABLET ===== */
+
+@media (max-width: 992px) {
+  .techstack {
+    padding: 60px 20px 50px 60px;
+    margin-top: 30px;
+  }
+
+  .techstack hr {
+    width: 350px;
+  }
+
+  .techstack .card {
+    min-height: 70px;
+  }
+
+  .techstack .tech-icon {
+    font-size: 1.8rem;
+    margin-right: 10px;
+  }
+
+  .techstack .media-body h5 {
+    font-size: 14px;
+  }
+}
+
+/* ===== MOBILE ===== */
+
 @media (max-width: 600px) {
   .techstack {
-    padding: 0;
-    margin: 0;
-    margin-top: 50px;
+    padding: 35px 10px 40px;
+    margin: 30px 0 0;
+  }
+
+  .techstack h2 {
+    font-size: 24px;
+    padding-top: 10px;
   }
 
   .techstack hr {
     width: 280px;
+    margin: 10px auto 15px;
+  }
+
+  .techstack > div:first-child p {
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .techstack .card {
+    margin: 8px !important;
+    min-height: 65px;
+    border-radius: 7px;
+  }
+
+  .techstack .card-body {
+    padding: 14px 10px;
+  }
+
+  .techstack .tech-icon {
+    font-size: 1.7rem;
+    margin-right: 9px;
+  }
+
+  .techstack .media-body h5 {
+    font-size: 13px;
+  }
+
+  .techstack .card:hover {
+    transform: translateY(-4px);
+  }
+}
+
+/* ===== SMALL MOBILE ===== */
+
+@media (max-width: 400px) {
+  .techstack {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .techstack .card {
+    margin: 6px !important;
+  }
+
+  .techstack .tech-icon {
+    font-size: 1.5rem;
+  }
+
+  .techstack .media-body h5 {
+    font-size: 12px;
   }
 }

@@ -1,106 +1,125 @@
 import React from "react";
 import "./Projects.css";
 import Spin from "react-reveal/Spin";
+
 const Projects = () => {
   return (
     <>
-      <div className="continer project" id="projects">
+      <div className="container project" id="projects">
         <h2 className="col-12 mt-3 mb-1 text-center text-uppercase">
-          TOP RECENT PROJECTS
+          Recent Projects
         </h2>
+
         <hr />
-        <p className="pb-3 text-center">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia a
-          odit ab, eligendi cupiditate, minima quasi excepturi modi et quo
-          delectus, iusto dolor atque aliquam aspernatur eveniet! Ipsam eum
-          nobis omnis id voluptatibus quas eos maxime ipsum facere numquam,
-          voluptate qui et animi doloribus nulla eius molestiae unde tempore ad
+
+        <p className="pb-3 text-center project-description">
+          A selection of backend-focused projects demonstrating scalable REST
+          APIs, authentication, database optimization, caching, and
+          asynchronous processing.
         </p>
-        {/* card design */}
+
+        {/* Project Cards */}
         <div className="row" id="ads">
           <Spin>
-            <div className="col-md-4">
-              <div className="card rounded">
-                <div className="card-image">
-                  <span className="card-notify-badge">Full stack</span>
-                  <img
-                    src="https://unctad.org/sites/default/files/2021-03/2021-03-15_eCommerceCOVID19report-1-1220x675px.jpg"
-                    alt="project1"
-                  />
-                </div>
-                <div className="card-image-overly m-auto mt-3">
-                  <span className="card-detail-badge">Node</span>
-                  <span className="card-detail-badge">Express</span>
-                  <span className="card-detail-badge">react</span>
-                  <span className="card-detail-badge">Mongodb</span>
-                </div>
-                <div className="card-body text-center">
-                  <div className="ad-title m-auto">
-                    <h6 className="text-uppercase">
-                      Techinfoyt Shopping Website
-                    </h6>
-                  </div>
-                  <a
-                    className="ad-btn"
-                    href="https://github.com/techinfo-youtube/ecommerce-app-2023"
-                  >
-                    View
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="card rounded">
-                <div className="card-image">
-                  <span className="card-notify-badge">Mobile App</span>
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR356D-1YtSagN4-_ZdjZ5H9o6PKUO4h12dvw&usqp=CAU"
-                    alt="project2"
-                  />
-                </div>
-                <div className="card-image-overly m-auto mt-3">
-                  <span className="card-detail-badge">React Native</span>
 
-                  <span className="card-detail-badge">IOS / ANDROID</span>
-                </div>
-                <div className="card-body text-center">
-                  <div className="ad-title m-auto">
-                    <h5 className="text-uppercase">Techinfoyt Coding App</h5>
-                  </div>
-                  <a
-                    className="ad-btn"
-                    href="https://github.com/techinfo-youtube/ecommerce-app-2023"
-                  >
-                    View
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="card rounded">
+            {/* ================= URL SHORTENER ================= */}
+
+            <div className="col-md-6 col-lg-6 mb-4">
+              <div className="card rounded project-card">
+
                 <div className="card-image">
                   <span className="card-notify-badge">Backend</span>
+
                   <img
-                    src="https://www.nextwebi.com/assets/img/img-source/mobile-top-banner-28.png"
-                    alt="project1"
+                    src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80"
+                    alt="URL Shortener Application"
                   />
                 </div>
-                <div className="card-image-overly m-auto mt-3">
-                  <span className="card-detail-badge">Node</span>
-                  <span className="card-detail-badge">Express</span>
 
-                  <span className="card-detail-badge">NoSQL</span>
+                <div className="card-image-overly m-auto mt-3">
+                  <span className="card-detail-badge">Node.js</span>
+                  <span className="card-detail-badge">Express.js</span>
+                  <span className="card-detail-badge">MongoDB</span>
+                  <span className="card-detail-badge">Redis</span>
+                  <span className="card-detail-badge">JWT</span>
                 </div>
+
                 <div className="card-body text-center">
                   <div className="ad-title m-auto">
-                    <h5 className="text-uppercase">Techinfoyt Job Portal</h5>
+                    <h5 className="text-uppercase">
+                      URL Shortener Application
+                    </h5>
                   </div>
-                  <a className="ad-btn" href="view">
-                    View
+
+                  <p className="project-card-description">
+                    Scalable URL shortening service with custom aliases,
+                    collision-safe short codes, Redis caching, click
+                    analytics, JWT authentication, RBAC, rate limiting,
+                    and optimized MongoDB indexing.
+                  </p>
+
+                  <a
+                    className="ad-btn"
+                    href="https://github.com/pradeepshukla19"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View Project
                   </a>
                 </div>
+
               </div>
             </div>
+
+            {/* ================= PAYMENT BACKEND ================= */}
+
+            <div className="col-md-6 col-lg-6 mb-4">
+              <div className="card rounded project-card">
+
+                <div className="card-image">
+                  <span className="card-notify-badge">
+                    Payment Backend
+                  </span>
+
+                  <img
+                    src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=80"
+                    alt="Payment Processing Backend"
+                  />
+                </div>
+
+                <div className="card-image-overly m-auto mt-3">
+                  <span className="card-detail-badge">Node.js</span>
+                  <span className="card-detail-badge">TypeScript</span>
+                  <span className="card-detail-badge">MySQL</span>
+                  <span className="card-detail-badge">AWS SQS</span>
+                  <span className="card-detail-badge">REST API</span>
+                </div>
+
+                <div className="card-body text-center">
+                  <div className="ad-title m-auto">
+                    <h5 className="text-uppercase">
+                      Payment Processing System
+                    </h5>
+                  </div>
+
+                  <p className="project-card-description">
+                    Backend payment processing workflows with transaction
+                    handling, retry mechanisms, audit logging, failure
+                    handling, asynchronous processing, and reliable
+                    payment operations.
+                  </p>
+
+                  <a
+                    className="ad-btn"
+                    href="#contact"
+                  >
+                    Contact Me
+                  </a>
+                </div>
+
+              </div>
+            </div>
+
           </Spin>
         </div>
       </div>
