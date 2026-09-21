@@ -9,6 +9,8 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [msg, setMsg] = useState("");
 
+   const API_URL = process.env.REACT_APP_API_URL;
+
   // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -19,7 +21,7 @@ const Contact = () => {
     }
 
     try {
-      const res = await axios.post("/api/v1/portfolio/sendEmail", {
+     const res = await axios.post(`${API_URL}/api/v1/portfolio/sendEmail`, {
         name: name.trim(),
         email: email.trim(),
         msg: msg.trim(),
