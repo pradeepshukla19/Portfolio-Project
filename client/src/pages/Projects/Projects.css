@@ -264,3 +264,29 @@
     width: 140px;
   }
 }
+
+/* Keep all project cards visually consistent */
+.project-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Keep project content balanced */
+.project-card .card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Consistent description area */
+.project-card-description {
+  min-height: 90px;
+  line-height: 1.6;
+}
+
+/* Keep buttons aligned at the bottom */
+.project-card .ad-btn {
+  margin-top: auto;
+  align-self: center;
+}
